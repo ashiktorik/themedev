@@ -71,8 +71,8 @@ $(function () {
 $('.testimonial_slide').owlCarousel({
     loop: true,
             margin: 10,
-             autoplay:true,
-             autoplayTimeout:1000,
+             autoplay:false,
+             autoplayTimeout:false,
             responsiveClass: true,
             responsive: {
                 0: {
