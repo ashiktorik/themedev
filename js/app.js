@@ -151,3 +151,4 @@ changeWord();
 setInterval(changeWord, 4000);
 
 
+//slider

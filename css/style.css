@@ -192,6 +192,13 @@ li.active a{
     border-bottom: 2px solid #B200FD;
 }
 
+.nav-item .active{
+    /* background-color: #B200FD; */
+    color: #B200FD !important;
+    border-radius: 15px;
+    border-bottom: 2px solid #B200FD;
+}
+
 .nav-item a:hover {
     /* background-color: #B200FD; */
     color: #B200FD !important;
@@ -634,12 +641,29 @@ li.active a{
     height: 512px;
 }
 
-.testimonial_slide {
-    margin-top: 50px;
+.owl-carousel .owl-item img {
+    display: inline-block;
+    /* width: 12%; */
+    width: auto;
+    height: 213px;
+}
+
+.owl-carousel button.owl-dot {
+    height: 4px;
+    width: 20px;
+    background:black;
+    display: inline-block;
+    margin: 2px;
+
 }
 
 
-.qoute {
+.owl-carousel button.owl-dot.active{
+    background:#B200FD;
+}
+
+
+/* .qoute {
     margin-bottom: 25px;
     width: 100%;
     height: auto;
@@ -665,7 +689,7 @@ li.active a{
 .qoute img {
     height: 100px;
     width: 100px;
-    /* border-radius: 100px; */
+    /* border-radius: 100px; 
     left: 0px;
     top: 0px;
     display: flex;
@@ -709,7 +733,7 @@ li.active a{
 .owl-carousel .owl-nav button.owl-next,
 .owl-carousel .owl-nav .text-danger {
     color: #B200FD !important;
-}
+} */
 
 
 /* ----------------------------------------------------------------
@@ -857,7 +881,7 @@ li.active a{
 
     #hero-image {
         z-index: 99999;
-        margin-top: -100px;
+        margin-top: -50px;
         min-height: 700px;
         height: auto;
         width: 100%;
@@ -876,6 +900,19 @@ li.active a{
 
     .slogan {
         margin-top: 25%;
+    }
+
+    .word {
+        margin-left: 66px;
+        position: absolute;
+        width: 250px;
+        opacity: 0;
+        font-size: 25px;
+        color: #B200FD;
+    }
+    .text {
+        position: absolute;
+        margin-top: 0px;
     }
 
     .john img {
@@ -1000,11 +1037,13 @@ li.active a{
 
     .contact-form-btn {
         background-color: #B200FD;
-        border: none;
-        border-radius: 15px;
-        padding: 0 20px;
-        text-align: right;
-        float: unset;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 36px;
+    text-align: right;
+    float: right;
+    color: #fff;
+    box-shadow: -1px 4px 9px 0px #b200fd8c;
     }
 
 
