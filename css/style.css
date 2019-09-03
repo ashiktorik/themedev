@@ -14,57 +14,67 @@ body {
 
 }
 
+.wrap {
+    margin-left: auto;
+    max-width: 1200px;
+    text-align: center;
+    position: relative;
+    margin-right: auto;
+    margin-top: 20px;
+
+}
+
 /*----style heading one ----*/
 h1 {
-    font-family: ;
+    font-family: unset;
     font-size: 60px;
-    font-weight: ;
+    font-weight: unset;
     font-style: normal;
-    letter-spacing: ;
-    line-height: ;
+    letter-spacing: unset;
+    line-height: unset;
 }
 
 
 /*----style heading two ----*/
 h2 {
-    font-family: ;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 36px;
-    font-weight: ;
+    font-weight: unset;
     font-style: normal;
-    letter-spacing: ;
-    line-height: ;
+    letter-spacing: unset;
+    line-height: unset;
 }
 
 
 /*----style heading three ----*/
 h3 {
-    font-family: ;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
-    font-weight: ;
+    font-weight: unset;
     font-style: normal;
-    letter-spacing: ;
-    line-height: ;
+    letter-spacing: unset;
+    line-height: unset;
 }
 
 /*----style heading four ----*/
 h4 {
-    font-family: ;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 22px;
-    font-weight: ;
+    font-weight: unset;
     font-style: normal;
-    letter-spacing: ;
-    line-height: ;
+    letter-spacing: unset;
+    line-height: unset;
 }
 
 
 /*----style body text----*/
 p {
-    font-family: ;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
-    font-weight: ;
+    font-weight: unset;
     font-style: normal;
-    letter-spacing: ;
-    line-height: ;
+    letter-spacing: unset;
+    line-height: unset;
 }
 
 
@@ -219,8 +229,52 @@ ul {
 /*----hero image Description----*/
 .slogan {
     margin-top: 90%;
+
 }
 
+.slogan .icon {
+    color: #B400FF;
+    display: inline-flex;
+    padding-right: 10px;
+    font-size: 25px;
+    text-align: left;
+    margin-top: 30px;
+}
+
+.word {
+    position: absolute;
+    width: 250px;
+    opacity: 0;
+    font-size: 36px;
+    color: #B200FD;
+    
+  }
+  .text{
+      margin-top: -20px;
+  }
+  
+  .letter {
+    display: inline-block;
+    position: relative;
+    /* float: left; */
+    transform: translateZ(25px);
+    transform-origin: 50% 50% 25px;
+  }
+  
+  .letter.out {
+    transform: rotateX(90deg);
+    transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  
+  .letter.behind {
+    transform: rotateX(-90deg);
+  }
+  
+  .letter.in {
+    transform: rotateX(0deg);
+    transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
 /*---michel jhon photo---*/
 .john img {
     width: 410px;
@@ -230,6 +284,12 @@ ul {
     float: right;
     padding: 0px;
 }
+
+
+
+
+
+
 
 /* ----------------------------------------------------------------
      [ Start About Me ]
@@ -244,7 +304,6 @@ ul {
     background-size: cover;
     background-position: center, top;
     background-repeat: no-repeat;
-    /* background-attachment:  fixed !important; */
 }
 
 /*----style bio pragraph----*/
@@ -290,7 +349,6 @@ ul {
 }
 
 .about-progress-item {
-
     text-align: left;
 }
 
@@ -371,7 +429,7 @@ ul {
     min-height: 415px;
     width: 100%;
     background-image: url(../img/education.jpg);
-    background-size: cover;
+    /* background-size: cover; */
     background-position: center, top;
     background-repeat: no-repeat;
 }
@@ -488,7 +546,6 @@ ul {
 /*----style Portfolio grid views split stack slide----*/
 .grid {
     display: block;
-    width: 100%;
     position: relative;
     margin-top: 30px;
     -webkit-box-sizing: border-box;
@@ -670,7 +727,7 @@ ul {
     width: 100%;
     background-image: url(../img/contact.jpg);
     background-size: cover;
-    background-position: center, top;
+    background-position:bottom;
     background-repeat: no-repeat;
 }
 
@@ -728,8 +785,10 @@ ul {
     float: right;
 }
 
+
+/*-----------------Start Footer------------------*/
 #footer {
-    background-color: #DEDEDE;
+    background-color: rgba(177, 0, 253, 0.205);
 }
 
 
@@ -795,6 +854,7 @@ ul {
         z-index: 99999;
         margin-top: -100px;
         min-height: 700px;
+        height: auto;
         width: 100%;
         background-image: url(../img/hero.jpg);
         background-size: contain;
@@ -946,6 +1006,15 @@ ul {
 }
 
 @media only screen and (max-width: 1200px) {
+
+    .element-item {
+        overflow: hidden;
+        position: relative;
+        width: 50%;
+        display: block;
+        float: left;
+        padding: 7px;
+    }
 
 
     /*----style education timeline mid circle or round shape on the violate verticle line----*/
