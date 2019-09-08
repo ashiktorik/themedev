@@ -137,6 +137,9 @@ hr {
     overflow-x: hidden;
 }
 
+#footer .fab {
+    color: rgb(255, 255, 255);
+}
 
 /*----style list----*/
 
@@ -257,15 +260,19 @@ li.active a{
 
 .word {
     position: absolute;
-    width: 270px;
+    width: 100%;
     opacity: 0;
     font-size: 36px;
     color: #B200FD;
     
   }
   .text{
-      margin-top: -20px;
+      margin-top: -20px; 
   }
+
+  .text p{
+    text-transform: uppercase;
+}
   
   .letter {
     display: inline-block;
