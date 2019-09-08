@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+
+
+
 /* ----------------------------------------------------------------
      [  Start Basics ]
 -----------------------------------------------------------------*/
@@ -26,9 +30,9 @@ body {
 
 /*----style heading one ----*/
 h1 {
-    font-family: unset;
+    font-family: 'Montserrat', sans-serif;
     font-size: 60px;
-    font-weight: unset;
+    font-weight: 600;
     font-style: normal;
     letter-spacing: unset;
     line-height: unset;
@@ -37,9 +41,9 @@ h1 {
 
 /*----style heading two ----*/
 h2 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 36px;
-    font-weight: unset;
+    font-weight: 500;
     font-style: normal;
     letter-spacing: unset;
     line-height: unset;
@@ -48,7 +52,7 @@ h2 {
 
 /*----style heading three ----*/
 h3 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     font-weight: unset;
     font-style: normal;
@@ -58,7 +62,7 @@ h3 {
 
 /*----style heading four ----*/
 h4 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 22px;
     font-weight: unset;
     font-style: normal;
@@ -69,7 +73,7 @@ h4 {
 
 /*----style body text----*/
 p {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: unset;
     font-style: normal;
@@ -253,7 +257,7 @@ li.active a{
 
 .word {
     position: absolute;
-    width: 250px;
+    width: 270px;
     opacity: 0;
     font-size: 36px;
     color: #B200FD;
@@ -817,8 +821,8 @@ li.active a{
 
 /*-----------------Start Footer------------------*/
 #footer {
-    background-color: rgb(235, 235, 235);
-    color: #000;
+    background-color: rgb(36, 36, 36);
+    color: rgb(255, 255, 255);
 }
 
 
