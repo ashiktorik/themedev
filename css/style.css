@@ -817,7 +817,8 @@ li.active a{
 
 /*-----------------Start Footer------------------*/
 #footer {
-    background-color: rgba(177, 0, 253, 0.205);
+    background-color: rgb(235, 235, 235);
+    color: #000;
 }
 
 
