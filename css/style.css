@@ -132,13 +132,19 @@ hr {
 }
 
 .fab {
+    background: #b400ff;
+    padding: 6px 8px 6px 8px;
     border-radius: 100%;
-    color: #B400FF;
+    color: #ffffff;
     overflow-x: hidden;
 }
 
 #footer .fab {
-    color: rgb(255, 255, 255);
+    background: #ffffff;
+    padding: 6px 8px 6px 8px;
+    border-radius: 100%;
+    color: #B400FF;
+    overflow-x: hidden;
 }
 
 /*----style list----*/
@@ -258,43 +264,10 @@ li.active a{
     margin-top: 30px;
 }
 
-.word {
-    position: absolute;
-    width: 100%;
-    opacity: 0;
-    font-size: 36px;
+.type-wrap{
     color: #B200FD;
-    
-  }
-  .text{
-      margin-top: -20px; 
-  }
-
-  .text p{
-    text-transform: uppercase;
+    font-size: 36px;
 }
-  
-  .letter {
-    display: inline-block;
-    position: relative;
-    /* float: left; */
-    transform: translateZ(25px);
-    transform-origin: 50% 50% 25px;
-  }
-  
-  .letter.out {
-    transform: rotateX(90deg);
-    transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
-  }
-  
-  .letter.behind {
-    transform: rotateX(-90deg);
-  }
-  
-  .letter.in {
-    transform: rotateX(0deg);
-    transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  }
   
 /*---michel jhon photo---*/
 .john img {

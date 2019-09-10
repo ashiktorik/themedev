@@ -21,7 +21,7 @@ $(function () {
     $('.testimonial_section').owlCarousel({
         loop: true,
         margin: 10,
-        autoplay:true,
+        autoplay: true,
         nav: true,
         responsive: {
             0: {
@@ -35,7 +35,7 @@ $(function () {
             }
         },
         navText: ["<i class='text-danger fa fa-chevron-left'></i>", "<i class='text-danger fa fa-chevron-right'></i>"]
-        
+
     })
 
 
@@ -70,85 +70,84 @@ $(function () {
 
 $('.testimonial_slide').owlCarousel({
     loop: true,
-            margin: 10,
-             autoplay:false,
-             autoplayTimeout:false,
-            responsiveClass: true,
-            responsive: {
-                0: {
-                    items: 1,
-                    nav: true
-                },
-                600: {
-                    items: 2,
-                    nav: false
-                },
-                1000: {
-                    items: 3,
-                    nav: true,
-                    loop: true
-                }
-            },
-            navText: ["<i class='text-danger fa fa-chevron-left'></i>", "<i class='text-danger fa fa-chevron-right'></i>"]
-    
-        });
+    margin: 10,
+    autoplay: false,
+    autoplayTimeout: false,
+    responsiveClass: true,
+    responsive: {
+        0: {
+            items: 1,
+            nav: true
+        },
+        600: {
+            items: 2,
+            nav: false
+        },
+        1000: {
+            items: 3,
+            nav: true,
+            loop: true
+        }
+    },
+    navText: ["<i class='text-danger fa fa-chevron-left'></i>", "<i class='text-danger fa fa-chevron-right'></i>"]
+
+});
 
 
 //<!-- text changer js -->
-        var words = document.getElementsByClassName('word');
-var wordArray = [];
-var currentWord = 0;
+document.addEventListener('DOMContentLoaded', function () {
+    var typed = new Typed('#typed', {
+        stringsElement: '#typed-strings',
+        typeSpeed: 40,
+        backSpeed: 10,
+        startDelay: 1000,
+        loop: true,
+        loopCount: Infinity,
+        onComplete: function (self) {
+            prettyLog('onComplete ' + self);
+        },
+        preStringTyped: function (pos, self) {
+            prettyLog('preStringTyped ' + pos + ' ' + self);
+        },
+        onStringTyped: function (pos, self) {
+            prettyLog('onStringTyped ' + pos + ' ' + self);
+        },
+        onLastStringBackspaced: function (self) {
+            prettyLog('onLastStringBackspaced ' + self);
+        },
+        onTypingPaused: function (pos, self) {
+            prettyLog('onTypingPaused ' + pos + ' ' + self);
+        },
+        onTypingResumed: function (pos, self) {
+            prettyLog('onTypingResumed ' + pos + ' ' + self);
+        },
+        onReset: function (self) {
+            prettyLog('onReset ' + self);
+        },
+        onStop: function (pos, self) {
+            prettyLog('onStop ' + pos + ' ' + self);
+        },
+        onStart: function (pos, self) {
+            prettyLog('onStart ' + pos + ' ' + self);
+        },
+        onDestroy: function (self) {
+            prettyLog('onDestroy ' + self);
+        }
+    });
+    
+});
 
-words[currentWord].style.opacity = 1;
-for (var i = 0; i < words.length; i++) {
-  splitLetters(words[i]);
+function prettyLog(str) {
+    console.log('%c ' + str, 'color: green; font-weight: bold;');
 }
 
-function changeWord() {
-  var cw = wordArray[currentWord];
-  var nw = currentWord == words.length-1 ? wordArray[0] : wordArray[currentWord+1];
-  for (var i = 0; i < cw.length; i++) {
-    animateLetterOut(cw, i);
-  }
-  
-  for (var i = 0; i < nw.length; i++) {
-    nw[i].className = 'letter behind';
-    nw[0].parentElement.style.opacity = 1;
-    animateLetterIn(nw, i);
-  }
-  
-  currentWord = (currentWord == wordArray.length-1) ? 0 : currentWord+1;
+function toggleLoop(typed) {
+    if (typed.loop) {
+        typed.loop = false;
+    } else {
+        typed.loop = true;
+    }
 }
-
-function animateLetterOut(cw, i) {
-  setTimeout(function() {
-		cw[i].className = 'letter out';
-  }, i*80);
-}
-
-function animateLetterIn(nw, i) {
-  setTimeout(function() {
-		nw[i].className = 'letter in';
-  }, 340+(i*80));
-}
-
-function splitLetters(word) {
-  var content = word.innerHTML;
-  word.innerHTML = '';
-  var letters = [];
-  for (var i = 0; i < content.length; i++) {
-    var letter = document.createElement('span');
-    letter.className = 'letter';
-    letter.innerHTML = content.charAt(i);
-    word.appendChild(letter);
-    letters.push(letter);
-  }
-  
-  wordArray.push(letters);
-}
-
-changeWord();
-setInterval(changeWord, 4000);
 
 
 //slider
