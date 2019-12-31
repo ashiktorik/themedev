@@ -261,7 +261,7 @@
     <section id="education" class="wow fadeInUp" data-wow-offset="10" data-wow-iteration="1">
       <div class="container">
         <div class="row justify-content-md-center">
-          <div class="col-12 index-page">
+          <div class="col-12 index-page" style="padding-top: 54px;">
 
             <h3><span class="section-title">EDUCATION</span></h3>
             <div class="col-8 timeline-container wow fadeInUp" class="wow slideInLeft" data-wow-duration="1s"
@@ -434,119 +434,6 @@
 
 
     <!--=============Start Testimonials=============-->
-    <!-- <section id="testimonial" class="wow fadeInUp" data-wow-offset="10" data-wow-iteration="1">
-      <div class="container testimonial-container">
-        <div class="row">
-          <div class="col-md-12 index-page">
-            <div>
-              <h3><span class="section-title">Happy Client</span></h3>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-            <div class="testimonial_slide owl-carousel">
-              <div class="qoute slideOutLeft">
-                <div class="qoute-top">
-                  <div class="qoute-top-img img">
-                    <img src="./img/Photo/harley-davidson-1628025-unsplash.jpg" class="testimonial-img">
-                  </div>
-                  <div class="qoute-top-tilte">
-                    <h4>Harley Davidson</h4>
-                    <p>CEO Harley limited</p>
-                  </div>
-                </div>
-                <div class="qoute-bottom">
-                  <h4>"He is a really good guy.
-                    Recommended"</h4>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and
-                    scrambled it to make a type specimen book. It has </p>
-                </div>
-              </div>
-              <div class="qoute slideOutLeft">
-                <div class="qoute-top">
-                  <div class="qoute-top-img img">
-                    <img src="./img/Photo/harley-davidson-1628025-unsplash.jpg" class="testimonial-img">
-                  </div>
-                  <div class="qoute-top-tilte">
-                    <h4>Harley Davidson</h4>
-                    <p>CEO Harley limited</p>
-                  </div>
-                </div>
-                <div class="qoute-bottom">
-                  <h4>"He is a really good guy.
-                    Recommended"</h4>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and
-                    scrambled it to make a type specimen book. It has </p>
-                </div>
-              </div>
-              <div class="qoute slideOutLeft">
-                <div class="qoute-top">
-                  <div class="qoute-top-img img">
-                    <img src="./img/Photo/harley-davidson-1628025-unsplash.jpg" class="testimonial-img">
-                  </div>
-                  <div class="qoute-top-tilte">
-                    <h4>Harley Davidson</h4>
-                    <p>CEO Harley limited</p>
-                  </div>
-                </div>
-                <div class="qoute-bottom">
-                  <h4>"He is a really good guy.
-                    Recommended"</h4>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and
-                    scrambled it to make a type specimen book. It has </p>
-                </div>
-              </div>
-              <div class="qoute slideOutLeft">
-                <div class="qoute-top">
-                  <div class="qoute-top-img img">
-                    <img src="./img/Photo/harley-davidson-1628025-unsplash.jpg" class="testimonial-img">
-                  </div>
-                  <div class="qoute-top-tilte">
-                    <h4>Harley Davidson</h4>
-                    <p>CEO Harley limited</p>
-                  </div>
-                </div>
-                <div class="qoute-bottom">
-                  <h4>"He is a really good guy.
-                    Recommended"</h4>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and
-                    scrambled it to make a type specimen book. It has </p>
-                </div>
-              </div>
-              <div class="qoute slideOutLeft">
-                <div class="qoute-top">
-                  <div class="qoute-top-img img">
-                    <img src="./img/Photo/harley-davidson-1628025-unsplash.jpg" class="testimonial-img">
-                  </div>
-                  <div class="qoute-top-tilte">
-                    <h4>Harley Davidson</h4>
-                    <p>CEO Harley limited</p>
-                  </div>
-                </div>
-                <div class="qoute-bottom">
-                  <h4>"He is a really good guy.
-                    Recommended"</h4>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and
-                    scrambled it to make a type specimen book. It has </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
     <section id="testimonial">
       <div class="container testimonial-container">
         <div class="row">
@@ -605,7 +492,6 @@
 
 
     <!--=============Start Contact=============-->
-
     <section id="contact" class="wow fadeInUp" data-wow-offset="10" data-wow-iteration="1">
       <div class="container contact-container">
         <div class="row justify-content-md-center">
@@ -790,27 +676,10 @@
     $('#nav').onePageNav({
       currentClass: 'active',
       changeHash: false,
-      scrollSpeed: 750,
+      scrollSpeed: 10000,
       scrollThreshold: 0.5,
       filter: '',
       easing: 'swing'
-    });
-  </script>
-  <script>
-    $('#navbarNav a').click(function (idnone) {
-      idnone.preventDefault();
-      var hash = this.hash;
-      var position = $(hash).offset().top;
-      $('html').animate({
-        scrollTop: position
-      }, 900);
-    })
-  </script>
-  <script>
-    $("body").niceScroll({
-      cursorcolor: "#B300FE",
-      cursorwidth: "10px",
-
     });
   </script>
 
